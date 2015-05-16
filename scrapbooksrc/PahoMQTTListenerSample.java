@@ -14,7 +14,7 @@
  *    Dave Locke - initial API and implementation and/or initial documentation
  */
 
-package org.eclipse.paho.sample.mqttv3app;
+
 
 
 import java.io.IOException;
@@ -48,7 +48,7 @@ import org.eclipse.paho.client.mqttv3.persist.MqttDefaultFilePersistence;
  *  If the application is run with the -h parameter then info is displayed that
  *  describes all of the options / parameters.
  */
-public class Sample implements MqttCallback {
+public class PahoMQTTListenerSample implements MqttCallback {
 
 	/**
 	 * The main entry point of the sample.
@@ -154,7 +154,7 @@ public class Sample implements MqttCallback {
 		// driving the client API can begin
 		try {
 			// Create an instance of this class
-			Sample sampleClient = new Sample(url, clientId, cleanSession, quietMode,userName,password);
+			PahoMQTTListenerSample sampleClient = new PahoMQTTListenerSample(url, clientId, cleanSession, quietMode,userName,password);
 
 			// Perform the requested action
 			if (action.equals("publish")) {
@@ -192,7 +192,7 @@ public class Sample implements MqttCallback {
    * @param password the password for the user
 	 * @throws MqttException
 	 */
-    public Sample(String brokerUrl, String clientId, boolean cleanSession, boolean quietMode, String userName, String password) throws MqttException {
+    public PahoMQTTListenerSample(String brokerUrl, String clientId, boolean cleanSession, boolean quietMode, String userName, String password) throws MqttException {
     	this.brokerUrl = brokerUrl;
     	this.quietMode = quietMode;
     	this.clean 	   = cleanSession;
