@@ -79,7 +79,7 @@ public class MessageReceiver implements MqttCallback {
 
     @Override
     public void messageArrived(String topic, MqttMessage mm) throws Exception {
-        System.out.println("Message reçu : "+new String(mm.getPayload()));
+        //System.out.println("Message reçu : "+new String(mm.getPayload()));
         System.out.println(encoder.decode(mm.getPayload()));
     }
 
