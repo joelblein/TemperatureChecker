@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+
+
+<probeEventsDataSet>
+    <probeReadEvent>
+        <probeId>12345</probeId>
+        <time>2015-06-02T16:19:28.610+02:00</time>
+        <temperature>18.5</temperature>
+    </probeReadEvent>
+    <probeReadEvent>
+        <probeId>12345</probeId>
+        <time>2015-06-02T17:05:40.320+02:00</time>
+        <temperature>18.7</temperature>
+    </probeReadEvent>
+    <probeReadEvent>
+        <probeId>12345</probeId>
+        <time>2015-06-02T18:12:34.780+02:00</time>
+        <temperature>19.5</temperature>
+    </probeReadEvent>
+    <probeReadEvent>
+        <probeId>12345</probeId>
+        <time>2015-06-02T20:20:13.760+02:00</time>
+        <temperature>21</temperature>
+    </probeReadEvent>
+    <probeReadEvent>
+        <probeId>12345</probeId>
+        <time>2015-06-02T20:22:03.260+02:00</time>
+        <temperature>22.4</temperature>
+    </probeReadEvent>
+</probeEventsDataSet>
+

@@ -1,13 +1,6 @@
 package com.job.temperatureapp;
 
 import com.job.probemanager.ProbeEncoder;
-import com.job.probemanager.ProbeEvent;
-import com.job.probemanager.ProbeFailedEvent;
-import com.job.probemanager.ProbeMqttLogger;
-import com.job.probemanager.ProbeReadEvent;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.xml.bind.JAXBException;
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;
 import org.eclipse.paho.client.mqttv3.MqttClient;
