@@ -5,13 +5,13 @@
  */
 package com.job.temperatureapp;
 
-import com.job.probemanager.ProbeConnectionEvent;
-import com.job.probemanager.ProbeDisconnectionEvent;
-import com.job.probemanager.ProbeEvent;
-import com.job.probemanager.ProbeEventsDataSet;
-import com.job.probemanager.ProbeFailedEvent;
-import com.job.probemanager.ProbeReadEvent;
-import com.job.probemanager.XmlEncoder;
+import com.job.probeevent.ProbeConnectionEvent;
+import com.job.probeevent.ProbeDisconnectionEvent;
+import com.job.probeevent.ProbeEvent;
+import com.job.probeevent.ProbeEventsDataSet;
+import com.job.probeevent.ProbeFailedEvent;
+import com.job.probeevent.ProbeReadEvent;
+import com.job.probeevent.ProbeEventXmlEncoder;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.net.URL;
@@ -74,7 +74,7 @@ public class DataInjector {
         List<ProbeEvent> events = probeEventsDataSet.getEvents();
         assert events!=null;
 
-        XmlEncoder encoder = new XmlEncoder();
+        ProbeEventXmlEncoder encoder = new ProbeEventXmlEncoder();
         MqttClient mqttClient = new MqttClient("tcp://127.0.0.1:1883", "injecteurTest");
         mqttClient.connect();
         try { 

@@ -5,8 +5,8 @@
  */
 package com.job.temperatureapp.others;
 
-import com.job.probemanager.ProbeException;
-import com.job.probemanager.ProbeManager;
+import com.job.probeevent.ProbeException;
+import com.job.probeevent.ProbeManager;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
